@@ -71,7 +71,6 @@ else:
 
 
     #Region Based Segmentation
-    #Cammy edge detector is not able to find full complete contours, so I used thresholding
     threshold, threshold_output = cv2.threshold(image_gray, 128, 255, cv2.THRESH_BINARY_INV)
     cv2.imshow('Image Thresholding at threshold = 128', threshold_output)
     cv2.waitKey(0)
